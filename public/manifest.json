@@ -1,0 +1,21 @@
+{
+  "short_name": "Easypark Alert",
+  "name": "Easypark Alert",
+  "icons": [
+    {
+      "src": "/images/logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/logo-180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#fef5e6",
+  "background_color": "#fef5e6"
+}
