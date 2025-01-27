@@ -90,7 +90,9 @@ export default function ViewVehicle() {
 					</div>
 				}
 				<p className="fixed bottom-0 p-5 text-center max-w-1/2 left-1/2 -translate-x-1/2">Is this information inaccurate? Please send us an email.
-							      <a href="mailto:example@example.com" className="text-blue-500 underline ml-1">shahaabid599@gmail.com</a>
+						<a href="mailto:help.easyparkalert@gmail.com" className="text-blue-500 underline ml-1">
+  help.easyparkalert@gmail.com
+</a>
 </p>
 			</div>
 
