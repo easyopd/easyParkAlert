@@ -15,6 +15,7 @@ export default function AddNewVehicle() {
 		make: '',
 		model: '',
 		contactNumber: '',
+		alternateNumber: '',
 		owner: '',
 		numberPlate: plateNumber || '',
 	});
@@ -46,6 +47,7 @@ export default function AddNewVehicle() {
 				model: vehicleData.model,
 				numberPlate: vehicleData.numberPlate.replace(/\s+/g, '').toUpperCase(),
 				contactNumber: vehicleData.contactNumber,
+				alternateNumber: vehicleData.alternateNumber,
 				owner: vehicleData.owner,
 				UserID: user.uid,
 			});
@@ -117,6 +119,23 @@ export default function AddNewVehicle() {
 						type="tel"
 						name="contactNumber"
 						value={vehicleData.contactNumber}
+						onChange={handleChange}
+						className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+						placeholder="eg, 990000000"
+						required
+						minLength={10}
+						maxLength={10}
+						inputMode="numeric"
+						pattern="[0-9]*"
+					/>
+				</div>
+				<div>
+					<label htmlFor="EmergencyContact" className="block mb-2 text-sm font-medium text-gray-900">Alternate contact number</label>
+					<input
+						id='AlternateNumber'
+						type="tel"
+						name="alternateNumber"
+						value={vehicleData.alternateNumber}
 						onChange={handleChange}
 						className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
 						placeholder="eg, 990000000"
