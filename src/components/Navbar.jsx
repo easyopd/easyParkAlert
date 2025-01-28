@@ -3,6 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth'
 import { Link, useNavigate } from 'react-router-dom'
 import { useReactPWAInstall } from "react-pwa-install";
 
+// eslint-disable-next-line react/prop-types
 export default function Navbar({ back = true, title = 'Easypark Alert' }) {
 	const [user, loading] = useAuthState(auth)
 	const navigate = useNavigate()
@@ -28,6 +29,7 @@ export default function Navbar({ back = true, title = 'Easypark Alert' }) {
 				</button>
 				: null}
 			</div>
+			<img src="/images/logo-180.png" alt="Easypark Logo" className="w-20 h-20 align-item-start" />
 			<p className='font-bold text-2xl'>{title}</p>
 			<div>
 				{loading ? <div className='my-3 w-10 h-10 bg-slate-100 rounded-full animate-pulse'></div> :

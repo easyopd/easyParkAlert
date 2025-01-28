@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useParams, useNavigate } from "react-router-dom"
 import { db, auth } from '../firebase';
 import { deleteDoc, doc, getDoc } from "firebase/firestore";
@@ -82,6 +83,17 @@ export default function ViewVehicle() {
 							</div>
 						</a>
 					</div>
+					<div className='pl-0 p-3'>
+						<p className='text-sm'>Alternate number</p>
+						<a href={`tel:${vehicle.alternateNumber}`} className='text-lg font-semibold flex items-center gap-5'>{vehicle.alternateNumber}
+							<div className="p-3 text-white rounded-full bg-blue-600">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+									<path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
+								</svg>
+							</div>
+						</a>
+					</div>
+					
 				</div>
 				{vehicle.UserID === user?.uid &&
 					<div className='mt-10 text-center grid grid-cols-2 border-t border-dashed border-black/20'>
@@ -90,7 +102,9 @@ export default function ViewVehicle() {
 					</div>
 				}
 				<p className="fixed bottom-0 p-5 text-center max-w-1/2 left-1/2 -translate-x-1/2">Is this information inaccurate? Please send us an email.
-							      <a href="mailto:example@example.com" className="text-blue-500 underline ml-1">shahaabid599@gmail.com</a>
+				<a href="mailto:help.easyparkalert@gmail.com" className="text-blue-500 underline ml-1">
+  help.easyparkalert@gmail.com
+</a>
 </p>
 			</div>
 
