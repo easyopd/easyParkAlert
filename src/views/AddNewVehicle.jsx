@@ -130,7 +130,7 @@ export default function AddNewVehicle() {
 					/>
 				</div>
 				<div>
-					<label htmlFor="EmergencyContact" className="block mb-2 text-sm font-medium text-gray-900">Alternate contact number</label>
+					<label htmlFor="AlternateContact" className="block mb-2 text-sm font-medium text-gray-900">Alternate contact number</label>
 					<input
 						id='AlternateNumber'
 						type="tel"
