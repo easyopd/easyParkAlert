@@ -12,7 +12,7 @@ export default function Navbar({ back = true, title = 'Easypark Alert' }) {
 	const handlePwaInstall = () => {
 		pwaInstall({
 			title: "Easypark Alert",
-			logo: "/images/logo-180.png",
+			logo: "/images/logo-new.png",
 			description: "This is a very good app that does a lot of useful stuff. ",
 		})
 			.then(() => alert("App installed successfully or instructions for install shown"))
@@ -21,15 +21,8 @@ export default function Navbar({ back = true, title = 'Easypark Alert' }) {
 
 	return (
 		<div className='flex items-center justify-between'>
-			<div className="w-6 h-6">{back ?
-				<button onClick={() => navigate(-1)} aria-label='Go back'>
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-						<path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-					</svg>
-				</button>
-				: null}
-			</div>
-			<img src="/images/logo-180.png" alt="Easypark Logo" className="w-20 h-20 align-item-start" />
+			
+			<img src="/images/logo-new.png" alt="Easypark Logo" className="w-20 h-20" />
 			<p className='font-bold text-2xl'>{title}</p>
 			<div>
 				{loading ? <div className='my-3 w-10 h-10 bg-slate-100 rounded-full animate-pulse'></div> :
@@ -55,6 +48,15 @@ export default function Navbar({ back = true, title = 'Easypark Alert' }) {
 						</div>
 					)}
 			</div>
+			<div className="w-6 h-6">{back ?
+				<button onClick={() => navigate(-1)} aria-label='Go back'>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+						<path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+					</svg>
+				</button>
+				: null}
+			</div>
 		</div>
+		
 	)
 }
