@@ -47,6 +47,7 @@ export default function ViewVehicle() {
 			model: vehicleData.model,
 			numberPlate: vehicleData.numberPlate,
 			contactNumber: vehicleData.contactNumber,
+			alternateNumber: vehicleData.alternateNumber,
 			owner: vehicleData.owner,
 			UserID: user.uid,
 		})
