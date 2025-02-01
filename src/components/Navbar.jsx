@@ -20,10 +20,9 @@ export default function Navbar({ back = true, title = 'Easypark Alert' }) {
 	};
 
 	return (
-		<div className='flex items-center justify-between'>
-			
-			<img src="/images/logo-new.png" alt="Easypark Logo" className="w-10 h-10" />
-			<p className='font-bold text-2xl'>{title}</p>
+		<div className='flex items-center justify-between'>			
+			<img src="/images/logo-new.png" alt="Easypark Logo" className="w-10 h-10 rounded-full" />
+<p className='font-poppins font-bold text-4xl'>{title}</p>
 			<div>
 				{loading ? <div className='my-3 w-10 h-10 bg-slate-100 rounded-full animate-pulse'></div> :
 					user ? (
