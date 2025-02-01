@@ -22,7 +22,7 @@ export default function Navbar({ back = true, title = 'Easypark Alert' }) {
 	return (
 		<div className='flex items-center justify-between'>			
 			<img src="/images/logo-new.png" alt="Easypark Logo" className="w-10 h-10 rounded-full" />
-<p className='font-poppins font-bold text-2xl p-4'>{title}</p>
+<p className='font-poppins font-black text-2xl p-4 fw-5'>{title}</p>
 			<div>
 				{loading ? <div className='my-3 w-10 h-10 bg-slate-100 rounded-full animate-pulse'></div> :
 					user ? (
