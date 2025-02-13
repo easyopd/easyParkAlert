@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 import { useParams, useNavigate } from "react-router-dom"
 import { db, auth } from '../firebase';
@@ -105,7 +107,8 @@ export default function ViewVehicle() {
 						<a href="mailto:help.easyparkalert@gmail.com" className="text-blue-500 underline ml-1">
   help.easyparkalert@gmail.com
 </a>
-</p>
+				</p>
+				<p className="fixed bottom-0 p-5 text-center max-w-1/2 left-1/2 -translate-x-1/2">Is this information inaccurate? Please send us an email.</p>
 			</div>
 
 		)

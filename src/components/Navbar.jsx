@@ -21,14 +21,14 @@ export default function Navbar({ back = true, title = 'Easypark Alert' }) {
 
 	return (
 		<div className='flex items-center justify-between'>			
-			<img src="/images/logo-new.png" alt="Easypark Logo" className="w-10 h-10 rounded-full" />
+			<img src="/images/logo-new.png" alt="Easypark Logo" className="w-12 h-12 rounded-full" />
 <p className='font-poppins font-bold text-2xl p-4'>{title}</p>
 			<div>
 				{loading ? <div className='my-3 w-10 h-10 bg-slate-100 rounded-full animate-pulse'></div> :
 					user ? (
 						<div className='relative group'>
 							<div className='py-3'>
-								<img tabIndex={0} className='w-10 h-10 rounded-full' src={user.photoURL} />
+								<img tabIndex={0} className='w-11 h-11 rounded-full' src={user.photoURL} />
 							</div>
 							<div className={`w-max absolute top-14 right-0 flex-col items-start text-left bg-white rounded-lg shadow-xl hidden group-focus-within:flex group-hover:flex overflow-hidden`}>
 								<Link className='py-3 px-5 hover:bg-gray-100 transition' to="/manageVehicles">Manage vehicles</Link>
