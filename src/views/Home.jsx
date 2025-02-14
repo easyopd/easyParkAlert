@@ -135,33 +135,38 @@ export default function Home() {
           )}
         </div>
       </div>
-      <footer className='mt-10 py-5 text-center bg-gray-800 text-white rounded-xl'>
-  <div className="flex items-center justify-center space-x-3">
+     <footer className="mt-10 py-5 text-center bg-gray-800 text-white rounded-xl">
+  {/* Main Content */}
+  <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-3">
     {/* Logo */}
     <img 
       src="/images/cpad.jfif" 
       alt="Easypark Alert Logo" 
-      className="w-12 h-12 rounded-full border-2 border-white"
-          />
-          
-    <p className='text-sm'>
+      className="w-11 h-11 rounded-full border-2 border-white"
+    />
+
+    {/* Copyright Text */}
+    <p className="text-sm px-2">
       &copy; 2025 Easypark Alert. All rights reserved.
     </p>
-   </div>
-          
+  </div>
 
-  <div className="flex items-center justify-center space-x-3">
-             <p className="text-sm-center flex items-center justify-center space-x-1">
-    Reach us on :  
-    <a href="https://www.instagram.com/Easyparkalert" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline flex items-center">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  {/* Social Media Section */}
+  <div className="flex flex-col items-center mt-2">
+    <p className="text-sm">Reach us on:</p>
+    <a 
+      href="https://www.instagram.com/Easyparkalert" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="text-blue-500 hover:underline flex items-center mt-1"
+    >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M7.75 2C4.02208 2 1 5.02208 1 8.75V15.25C1 18.9779 4.02208 22 7.75 22H15.25C18.9779 22 22 18.9779 22 15.25V8.75C22 5.02208 18.9779 2 15.25 2H7.75ZM7.75 4H15.25C17.8503 4 20 6.14974 20 8.75V15.25C20 17.8503 17.8503 20 15.25 20H7.75C5.14974 20 3 17.8503 3 15.25V8.75C3 6.14974 5.14974 4 7.75 4ZM17 6C16.4477 6 16 6.44772 16 7C16 7.55228 16.4477 8 17 8C17.5523 8 18 7.55228 18 7C18 6.44772 17.5523 6 17 6ZM12.5 7C9.46243 7 7 9.46243 7 12.5C7 15.5376 9.46243 18 12.5 18C15.5376 18 18 15.5376 18 12.5C18 9.46243 15.5376 7 12.5 7ZM12.5 9C14.4325 9 16 10.5675 16 12.5C16 14.4325 14.4325 16 12.5 16C10.5675 16 9 14.4325 9 12.5C9 10.5675 10.5675 9 12.5 9Z" fill="currentColor"/>
       </svg>
     </a>
-          </p>
- </div>
-          
+  </div>
 </footer>
+
 
       
     </div>
