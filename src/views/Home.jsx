@@ -32,9 +32,9 @@ export default function Home() {
   return (
     <div className='max-w-2xl px-5 mx-auto'>
       <Navbar back={false} />
-      <div className='mt-10'>
-        <h1 className='font-bold text-xl'>Welcome to Easypark Alert</h1>
-        <p>Get emergency contact number of vehicles.</p>
+      <div className='mt-10 '>
+        <h1 className='font-bold text-xl flex items-center justify-center space-x-3'>Welcome to Easypark Alert</h1>
+        <p className='flex items-center justify-center space-x-3'>Get emergency contact number of vehicles.</p>
       </div>
       <form
         className='mt-8 pt-8 border-t border-dashed border-black/20'
@@ -135,7 +135,7 @@ export default function Home() {
           )}
         </div>
       </div>
-      <footer className='mt-10 py-4 text-center bg-gray-800 text-white rounded-xl'>
+      <footer className='mt-10 py-5 text-center bg-gray-800 text-white rounded-xl'>
   <div className="flex items-center justify-center space-x-3">
     {/* Logo */}
     <img 
@@ -144,7 +144,7 @@ export default function Home() {
       className="w-12 h-12 rounded-full border-2 border-white"
           />
           
-    <p className='text-sm px-4'>
+    <p className='text-sm'>
       &copy; 2025 Easypark Alert. All rights reserved.
     </p>
    </div>

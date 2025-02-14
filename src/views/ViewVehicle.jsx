@@ -108,7 +108,6 @@ export default function ViewVehicle() {
   help.easyparkalert@gmail.com
 </a>
 				</p>
-				<p className="fixed bottom-0 p-5 text-center max-w-1/2 left-1/2 -translate-x-1/2">Is this information inaccurate? Please send us an email.</p>
 			</div>
 
 		)
